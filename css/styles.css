@@ -1,0 +1,437 @@
+/* колір основного тексту       #212121 */
+/* колір другорядного тексту    #757575 */
+/* лого     чорний              #000000 
+            синій               #2196F3 */
+
+/* ховер синій                  #2196F3 */
+/* сірий майл тел               rgba(255, 255, 255, 0.6) */
+/* білий                        #FFFFFF */
+
+/* фон основний             #FFFFFF */
+/* фон другорядний          #F5F4FA */
+/* фон герой та футер       #2F303A */
+
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --logo-black-color: #000;
+    --mail-tel-color: rgba(255, 255, 255, 0.6);
+    --text-white-color: #FFFFFF;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --footer-background-color: #2F303A;
+    --button-hover-color: #188CE8;
+    --filter-button-color: #F5F4FA;
+    --hdr-border-color: #ECECEC;
+    --works-cards-border-color: #EEEEEE;
+    --outline-color-container: #f00;
+    --outline-color-container: transparent;
+    --outline-color-section: #ff9900;
+    --outline-color-section: transparent;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+.body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', 'Ubuntu', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+/* Прибирає нижній відступ в .img */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Списки */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Хедер */
+.hdr {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--hdr-border-color);
+}
+
+.hdr .container {
+    display: flex;
+    align-items: center;
+}
+
+/* Лого */
+.logo {
+    color: var(--logo-black-color);
+    text-decoration: none;
+    font-family: 'Raleway', 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.hdr-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.hdr .logo {
+    margin-right: 93px;
+}
+
+/* Навігація */
+.site-nav {
+    display: flex;
+}
+
+.site-nav .link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px
+}
+
+.contacts-nav .link{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.contacts-nav {
+    display: flex;
+}
+
+.contacts-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.hdr .link:hover, 
+.hdr .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* Мейн */
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   } 
+
+/* Герой */
+.hero {
+    padding: 200px 0;
+    background-color: var(--footer-background-color);
+    /* тимчасово */
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-white-color);
+}
+.button {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    border: 1px solid transparent;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-white-color);
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--button-hover-color);
+}
+
+.button:active {
+    color: var(--accent-color);
+    background-color: var(--primary-background-color);
+    border-color: var(--accent-color);
+}
+
+/* Стилі секцій */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 2px solid var(--outline-color-section);
+}
+
+ /* Особливості  */
+.section.features {
+    padding-bottom: 0;
+}
+
+/* Прихований заголовок */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+
+}
+
+.features-list .item {
+    width: calc((100% - 90px) / 4);
+}
+
+.features-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+/* Назва особливості */
+.features-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Текст особливості */
+.features-text {
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+
+/* Чим займаємося */
+/* Заголовок */
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.speciality .list {
+    display: flex;
+}
+.speciality .item:not(:last-child) {
+ margin-right: 30px;
+}
+
+/* Наша команда */
+.team {
+    background-color: var(--secondary-background-color);
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+}
+
+/* Картки працівників */
+.team-item{
+    background-color: var(--primary-background-color);
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-card-bottom {
+    padding: 30px 0;
+}
+
+/* Імена працівників */
+.team-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Посада */
+.team-text{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+/* Футер */
+.ftr {
+   background-color: var(--footer-background-color); 
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.ftr .logo-studio {
+    color: var(--text-white-color);   
+}
+
+.ftr-address {
+    margin-top: 20px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.ftr-location {
+    color: var(--text-white-color);
+    text-decoration: none;
+
+}
+
+.ftr .link:hover,
+.ftr .link:focus {
+    color: var(--accent-color);
+}
+
+.ftr-contacts {
+    margin-top: 9px;
+}
+
+.ftr-contacts .link {
+    color: var(--mail-tel-color);
+    text-decoration: none;
+}
+
+
+/* Портфоліо */
+/* Мейн */
+/* Секція */
+/* Фільтр */
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+.filter-button {
+    padding: 6px 22px;
+    cursor: pointer;
+
+    background: var(--filter-button-color);
+    border: none;
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.filter-button:hover, 
+.filter-button:focus {
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+}
+
+.filter-button.current {
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+}
+
+.filter-button:active {
+    color: var(--accent-color);
+    background-color: var(--primary-background-color);
+    border-color: var(--accent-color);
+}
+
+/* Перелік робіт */
+/* Картки */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.works-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.works-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.works-card-bottom {
+    border: 1px solid var(--works-cards-border-color);
+    border-top: none;
+    padding: 20px 24px;
+}
+
+.works-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.works-text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--secondary-text-color);
+}
