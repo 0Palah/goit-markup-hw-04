@@ -22,6 +22,8 @@
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
     --footer-background-color: #2F303A;
+    --hero-background-color: #C4C4C4;
+    --hero-img-overlay: rgba(47, 48, 58, 0.4);
     --button-hover-color: #188CE8;
     --filter-button-color: #F5F4FA;
     --hdr-border-color: #ECECEC;
@@ -149,9 +151,19 @@ img {
 
 /* Герой */
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 200px 0;
-    background-color: var(--footer-background-color);
-    /* тимчасово */
+    background-color: var(--hero-background-color);
+    background-image: linear-gradient(to top,
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4) ),
+        url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero .container {
@@ -207,7 +219,6 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 2px solid var(--outline-color-section);
 }
 
  /* Особливості  */
@@ -231,11 +242,38 @@ img {
 
 .features-list {
     display: flex;
-
 }
 
 .features-list .item {
     width: calc((100% - 90px) / 4);
+}
+
+.features-list .item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}
+
+.features-list .icon-antenna::before {
+    background-image: url(../images/antenna.png);
+}
+
+.features-list .icon-clock::before {
+    background-image: url(../images/clock.png);
+}
+
+.features-list .icon-diagram::before {
+    background-image: url(../images/diagram.png);
+}
+
+.features-list .icon-astronaut::before {
+    background-image: url(../images/astronaut.png);
 }
 
 .features-list .item:not(:last-child){
