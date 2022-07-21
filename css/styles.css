@@ -383,7 +383,8 @@ img {
     fill: currentColor;
 }
 
-.social-links .link:hover {
+.social-links .link:hover,
+.social-links .link:focus {
     background-color: var(--accent-color);
     color: var(--text-white-color);
 }
@@ -408,7 +409,8 @@ img {
     fill: currentColor;
 }
 
-.clients-list .link:hover {
+.clients-list .link:hover,
+.clients-list .link:focus {
     color: var(--accent-color);
     border:1px solid var(--accent-color);
 }
@@ -444,8 +446,8 @@ img {
 
 }
 
-.ftr .link:hover,
-.ftr .link:focus {
+.ftr-contacts .link:hover,
+.ftr-contacts .link:focus {
     color: var(--accent-color);
 }
 
