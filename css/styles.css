@@ -115,14 +115,6 @@ img {
     margin-right: 50px
 }
 
-.contacts-nav .link{
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    text-decoration: none;
-}
-
 .contacts-nav {
     display: flex;
 }
@@ -130,6 +122,30 @@ img {
 .contacts-nav .item:not(:last-child) {
     margin-right: 50px;
 }
+
+.contacts-nav .link{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.contacts-nav .icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts-nav .smartphone {
+    width: 10px;
+    height: 16px;
+}
+
 
 .hdr .link:hover, 
 .hdr .link:focus {
