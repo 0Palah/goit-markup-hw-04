@@ -28,6 +28,7 @@
     --filter-button-color: #F5F4FA;
     --hdr-border-color: #ECECEC;
     --works-cards-border-color: #EEEEEE;
+    --icon-primary-color: #AFB1B8;
     --outline-color-container: #f00;
     --outline-color-container: transparent;
     --outline-color-section: #ff9900;
@@ -59,6 +60,10 @@ img {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.link {
+    text-decoration: none;
 }
 
 /* Хедер */
@@ -108,7 +113,6 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    text-decoration: none;
 }
 
 .site-nav .item:not(:last-child) {
@@ -125,7 +129,6 @@ img {
 
 .contacts-nav .link{
     display: flex;
-    text-decoration: none;
     align-items: center;
 
     font-weight: 500;
@@ -207,6 +210,7 @@ img {
     padding: 10px 32px;
     min-width: 200px;
     border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     font-family: inherit;
     font-weight: 700;
@@ -282,10 +286,7 @@ img {
 .features-list .icon {
     width: 70px;
     height: 70px;
-    
 }
-
-
 
 /* Назва особливості */
 .features-title {
@@ -342,7 +343,7 @@ img {
 }
 
 .team-card-bottom {
-    padding: 30px 0;
+    padding: 30px 32px;
 }
 
 /* Імена працівників */
@@ -359,6 +360,56 @@ img {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.17;
+    margin-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links .link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-background-color);
+    color: var(--icon-primary-color);
+    padding: 12px;
+}
+
+.social-links .icon {
+    fill: currentColor;
+}
+
+.social-links .link:hover {
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+}
+
+ /* Постійні клієнти  */
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list .link {
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid var(--icon-primary-color);
+    border-radius: 4px;
+    color: var(--icon-primary-color);
+}
+
+.clients-list .icon {
+    fill: currentColor;
+}
+
+.clients-list .link:hover {
+    color: var(--accent-color);
+    border:1px solid var(--accent-color);
 }
 
 /* Футер */
@@ -380,7 +431,6 @@ img {
 
 .ftr-location {
     color: var(--text-white-color);
-    text-decoration: none;
 
 }
 
@@ -395,7 +445,7 @@ img {
 
 .ftr-contacts .link {
     color: var(--mail-tel-color);
-    text-decoration: none;
+ 
 }
 
 
