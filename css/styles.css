@@ -29,6 +29,7 @@
     --hdr-border-color: #ECECEC;
     --works-cards-border-color: #EEEEEE;
     --icon-primary-color: #AFB1B8;
+    --ftr-link-bg-color: rgba(255, 255, 255, 0.1);
     --outline-color-container: #f00;
     --outline-color-container: transparent;
     --outline-color-section: #ff9900;
@@ -419,6 +420,15 @@ img {
    padding-bottom: 60px;
 }
 
+.ftr .container {
+    display: flex;
+}
+
+.ftr .left {
+    width: 231px;
+    margin-right: 70px;
+}
+
 .ftr .logo-studio {
     color: var(--text-white-color);   
 }
@@ -445,8 +455,45 @@ img {
 
 .ftr-contacts .link {
     color: var(--mail-tel-color);
- 
+ }
+
+.join {
+    width: 206px;
+    margin-top: 15px;
 }
+
+.join .title {
+    font-size: 14px;
+    color: var(--text-white-color);
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ftr-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftr-social .link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--ftr-link-bg-color);
+    color: var(--text-white-color);
+    padding: 12px;
+}
+
+.ftr-social .icon {
+    fill: currentColor;
+}
+
+.ftr-social .link:hover {
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+}
+
 
 
 /* Портфоліо */
@@ -483,6 +530,9 @@ img {
 .filter-button:focus {
     background-color: var(--accent-color);
     color: var(--text-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button.current {
