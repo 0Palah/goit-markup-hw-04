@@ -379,13 +379,14 @@ img {
 }
 
 .social-links .link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-background-color);
   color: var(--icon-primary-color);
-  padding: 12px;
 }
 
 .social-links .icon {
@@ -488,13 +489,14 @@ img {
 }
 
 .footer-social .link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--footer-link-bg-color);
   color: var(--text-white-color);
-  padding: 12px;
 }
 
 .footer-social .icon {
@@ -570,7 +572,7 @@ img {
 }
 
 .works-item:nth-child(3n) {
-  margin-right: 0;  
+  margin-right: 0;
 }
 
 .works-item:nth-last-child(-n + 3) {
