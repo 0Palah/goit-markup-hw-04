@@ -501,7 +501,8 @@ img {
   fill: currentColor;
 }
 
-.footer-social .link:hover {
+.footer-social .link:hover,
+.footer-social .link:focus {
   background-color: var(--accent-color);
   color: var(--text-white-color);
 }
@@ -569,7 +570,7 @@ img {
 }
 
 .works-item:nth-child(3n) {
-  margin-right: 0;
+  margin-right: 0;  
 }
 
 .works-item:nth-last-child(-n + 3) {
